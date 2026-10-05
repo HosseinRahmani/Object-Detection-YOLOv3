@@ -1,0 +1,13 @@
+dataset_root: data/kitti
+seed: 42
+image_size: 416
+
+names:
+  - Car
+  - Van
+  - Truck
+  - Pedestrian
+  - Person_sitting
+  - Cyclist
+  - Tram
+  - Misc
