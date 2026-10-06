@@ -1,0 +1,66 @@
+{
+  "seed": 42,
+  "requested_ratios": [
+    0.7,
+    0.15,
+    0.15
+  ],
+  "split_method": "random images",
+  "names": [
+    "Car",
+    "Van",
+    "Truck",
+    "Pedestrian",
+    "Person_sitting",
+    "Cyclist",
+    "Tram",
+    "Misc"
+  ],
+  "splits": {
+    "train": {
+      "images": 5236,
+      "class_counts": {
+        "Car": 20117,
+        "Van": 2053,
+        "Truck": 790,
+        "Pedestrian": 3113,
+        "Person_sitting": 160,
+        "Cyclist": 1119,
+        "Tram": 347,
+        "Misc": 697
+      },
+      "empty_target_images": 0,
+      "dontcare_boxes": 7928
+    },
+    "val": {
+      "images": 1122,
+      "class_counts": {
+        "Car": 4458,
+        "Van": 456,
+        "Truck": 154,
+        "Pedestrian": 642,
+        "Person_sitting": 37,
+        "Cyclist": 264,
+        "Tram": 89,
+        "Misc": 140
+      },
+      "empty_target_images": 0,
+      "dontcare_boxes": 1741
+    },
+    "test": {
+      "images": 1123,
+      "class_counts": {
+        "Car": 4167,
+        "Van": 405,
+        "Truck": 150,
+        "Pedestrian": 732,
+        "Person_sitting": 25,
+        "Cyclist": 244,
+        "Tram": 75,
+        "Misc": 136
+      },
+      "empty_target_images": 0,
+      "dontcare_boxes": 1626
+    }
+  }
+}
