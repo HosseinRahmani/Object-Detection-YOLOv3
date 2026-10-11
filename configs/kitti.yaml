@@ -11,3 +11,16 @@ names:
   - Cyclist
   - Tram
   - Misc
+
+augmentation:
+  enabled: true
+  horizontal_flip: 0.5
+  color_probability: 0.8
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  affine_probability: 0.5
+  scale: 0.1
+  translate: 0.05
+  min_visibility: 0.25
+  min_box_pixels: 2

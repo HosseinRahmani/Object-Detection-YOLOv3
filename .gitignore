@@ -1,5 +1,11 @@
+
 .venv/
+venv/
 __pycache__/
+*.py[cod]
 data/
-weights/
-outputs/
+.idea/
+.DS_Store
+
+# Keep the final resume checkpoint locally
+outputs/finetune/last.pt
