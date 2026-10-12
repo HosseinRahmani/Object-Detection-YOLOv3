@@ -191,17 +191,6 @@ The NMS setting `--iou 0.45` is separate from evaluation matching IoUs. This eva
 
 Each evaluation exports `metrics.json`, `per_class.csv`, `pr_curves.csv`, and `predictions.json`. Use the full split for final reports; results from `--limit` are only subset checks.
 
-### Recorded baseline results
-
-The earlier evaluation reported the following results before confidence tuning:
-
-| Split | Precision | Recall | F1 | mAP50 | mAP75 | mAP50_95 |
-| --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Validation | 0.3263 | 0.9478 | 0.4855 | 0.8175 | 0.4779 | 0.4640 |
-| Test | 0.3209 | 0.9446 | 0.4791 | 0.8162 | 0.4551 | 0.4594 |
-
-The tuned operating threshold is `0.996568`, selected from validation precision-recall results. Consult the exported tuned `metrics.json` files for measured precision, recall, and F1 at this threshold. AP values measure ranking across thresholds; stricter confidence filtering can improve precision while reducing recall. Lower AP at stricter matching IoUs also indicates a need to improve box localization.
-
 ## 8. Prediction examples
 
 ![Example 1](outputs/predictions_tuned/000000_000009.png)
@@ -220,7 +209,6 @@ __pycache__/
 data/
 .idea/
 .DS_Store
-outputs/smoke/
 outputs/finetune/last.pt
 ```
 
